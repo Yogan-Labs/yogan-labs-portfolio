@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import VisitorCount from "../components/VisitorCount";
 import { projects } from "../data/projects";
 import { Circle } from "lucide-react";
 import { Mail, Github, Linkedin } from "lucide-react";
@@ -47,7 +48,7 @@ export default function Home() {
           <div className="space-y-3 text-zinc-400">
             <div className="flex items-center gap-3">
               <Mail className="h-4 w-4" />
-              <span>yourmail@example.com</span>
+              <span>sureshmenon87@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -71,6 +72,7 @@ export default function Home() {
                 https://www.linkedin.com/in/sureshkumar-menon-75865a27b/
               </a>
             </div>
+            <VisitorCount />
           </div>
         </section>
       </div>
