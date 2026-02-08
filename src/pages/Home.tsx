@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
-import VisitorCount from "../components/VisitorCount";
+
 import { projects } from "../data/projects";
 import { Circle } from "lucide-react";
 import { Mail, Github, Linkedin } from "lucide-react";
@@ -72,7 +72,6 @@ export default function Home() {
                 https://www.linkedin.com/in/sureshkumar-menon-75865a27b/
               </a>
             </div>
-            <VisitorCount />
           </div>
         </section>
       </div>
