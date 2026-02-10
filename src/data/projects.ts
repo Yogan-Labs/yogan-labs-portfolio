@@ -16,31 +16,64 @@ export const projects = [
       "Swagger & Postman collection",
     ],
     status: "Private · Available for freelance",
-  },{
-  id: "api-user-express",
-  title: "API User – Auth & User Management (Express.js)",
-  stack: ["Express.js", "TypeScript", "MongoDB"],
-  badges: [
-    "JWT",
-    "Refresh Token Rotation",
-    "RBAC",
-    "Rate Limiting",
-    "Swagger"
-  ],
-  description:
-    "Production-ready user management and authentication API built with Express.js, featuring secure JWT auth, refresh-token rotation, role-based access, login auditing, password reset, and auth-aware rate limiting.",
-  features: [
-    "User registration & login",
-    "JWT access tokens + refresh-token rotation",
-    "Role-based access control (USER / ADMIN)",
-    "Login tracking (IP, User-Agent, success/failure)",
-    "Secure password reset (hashed, expiring tokens)",
-    "Auth-aware rate limiting (IP + user-based)",
-    "Refresh token revocation & logout",
-    "Swagger (OpenAPI) documentation",
-    "Postman collection"
-  ],
-  status: "Private · Available for freelance / contract work",
-}
-
+  },
+  {
+    id: "api-user-express",
+    title: "API User – Auth & User Management (Express.js)",
+    stack: ["Express.js", "TypeScript", "MongoDB"],
+    badges: [
+      "JWT",
+      "Refresh Token Rotation",
+      "RBAC",
+      "Rate Limiting",
+      "Swagger",
+    ],
+    description:
+      "Production-ready user management and authentication API built with Express.js, featuring secure JWT auth, refresh-token rotation, role-based access, login auditing, password reset, and auth-aware rate limiting.",
+    features: [
+      "User registration & login",
+      "JWT access tokens + refresh-token rotation",
+      "Role-based access control (USER / ADMIN)",
+      "Login tracking (IP, User-Agent, success/failure)",
+      "Secure password reset (hashed, expiring tokens)",
+      "Auth-aware rate limiting (IP + user-based)",
+      "Refresh token revocation & logout",
+      "Swagger (OpenAPI) documentation",
+      "Postman collection",
+    ],
+    status: "Private · Available for freelance / contract work",
+  },
+  {
+    id: "oauth-demo-expressjs-mongodb",
+    title: "OAuth Authentication API – Express.js + MongoDB",
+    stack: ["Express.js", "TypeScript", "MongoDB", "OAuth 2.0"],
+    badges: [
+      "OAuth 2.0 (Google)",
+      "JWT",
+      "Refresh Token Rotation",
+      "RBAC",
+      "Swagger",
+    ],
+    description:
+      "Production-style OAuth authentication API built with Express.js and MongoDB, implementing Google OAuth 2.0 with PKCE, JWT-based access control, refresh-token rotation, and role-based authorization. Designed with real-world security trade-offs and clean modular architecture.",
+    features: [
+      "Google OAuth 2.0 login with PKCE",
+      "JWT access tokens (short-lived, stateless)",
+      "Refresh token rotation with reuse detection",
+      "Secure logout via refresh token revocation",
+      "Role-based access control (USER / ADMIN)",
+      "Protected /me endpoint (stateless auth check)",
+      "Project & user resource protection",
+      "Swagger (OpenAPI) documentation",
+      "Clear separation of auth, routes, and modules",
+    ],
+    securityNotes: [
+      "Refresh tokens stored hashed in MongoDB",
+      "Refresh token reuse detection invalidates all sessions",
+      "CSRF protection via OAuth state parameter",
+      "PKCE enforced for OAuth authorization code flow",
+      "Access tokens intentionally not revoked on logout (industry-standard JWT behavior)",
+    ],
+    status: "Public Demo · Express.js version (NestJS variant planned)",
+  },
 ];
