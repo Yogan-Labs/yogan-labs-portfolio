@@ -12,7 +12,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold">
-              Software Engineer — Production-ready APIs
+              Software Engineer — Backend-Focused Full-Stack
             </h1>
 
             <p className="mt-4 text-zinc-300 max-w-3xl">
